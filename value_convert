@@ -1,0 +1,6 @@
+a = '21.2万'
+#a including 万, remove and convert the string to double and multiply by 10000
+if '万' in a:
+    a = a.replace('万', '')
+    a = float(a) * 10000
+    print(a)
